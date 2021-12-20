@@ -1,0 +1,127 @@
+﻿<% @Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style11
+        {
+            width: 20%;
+            height: 28px;
+            background-color: #333300;
+        }
+        .style12
+        {
+            width: 22%;
+            height: 28px;
+            background-color: #333300;
+        }
+        .style13
+        {
+            width: 482px;
+            height: 28px;
+            background-color: #333300;
+        }
+        .style15
+        {
+            width: 20%;
+            height: 28px;
+            background-color: #663300;
+        }
+        .style16
+        {
+            width: 482px;
+        }
+        .style17
+        {
+            width: 21%;
+            height: 28px;
+            background-color: #333300;
+        }
+        .style18
+        {
+            height: 23px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    </div>
+    <table class="style1">
+        <tr>
+            <td class="style16" style="background-color: #c69606">
+                <img src="App_Themes/IMG-20150206-WA0012.jpg"height="200" width="200" alt="image" />  &nbsp;</td>
+            <td colspan="5" style="background-color: #C69606">
+                <img src="App_Themes/Puja_banner_black.jpg" 
+                    
+                    style="width: 1093px; height: 206px; margin-left: 14px; margin-top: 0px; margin-bottom: 0px;"alt="image" /><br />
+                <br />
+                <br />
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style13" bgcolor="#FF9933">
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/memberpage.aspx" 
+                    
+                    style="font-size: large; font-weight: 700; font-style: normal; font-family: 'Lucida Calligraphy'; color: #FFFFFF">Home</asp:HyperLink>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+            <td class="style15">
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/registration.aspx" 
+                    
+                    style="font-size: large; font-weight: 700; font-family: 'Lucida Calligraphy'; color: #FFFFFF; background-color: #003300">Registration</asp:HyperLink>
+            </td>
+            <td class="style12">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/About Us.aspx" 
+                    style="font-size: large; font-weight: 700; font-family: 'Lucida Calligraphy'; color: #FFFFFF">About Us</asp:HyperLink>
+            </td>
+            <td class="style17">
+                <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/matches.aspx" 
+                    style="font-size: large; font-style: normal; font-family: 'Lucida Calligraphy'; font-weight: 700; color: #FFFFFF">Potential Matches</asp:HyperLink>
+            </td>
+            <td class="style11">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/help.aspx" 
+                    style="font-size: large; font-weight: 700; font-family: 'Lucida Calligraphy'; color: #FFFFFF">Help</asp:HyperLink>
+            </td>
+            <td class="style11">
+                <asp:HyperLink ID="HyperLink6" runat="server" ForeColor="White" 
+                    NavigateUrl="~/Default3.aspx" 
+                    style="font-size: large; font-style: normal; font-family: 'Lucida Calligraphy'; font-weight: 700">Admin</asp:HyperLink>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="background-color: #999966; background-image: none;">
+                <br />
+                <br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                <br />
+            </p>
+        
+        </asp:ContentPlaceHolder>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" class="style18">
+                </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
