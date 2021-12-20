@@ -1,0 +1,56 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage2.master.vb" Inherits="MasterPage2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+        }
+        .style3
+        {
+            width: 365px;
+            background-color: #333300;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div></div>
+        
+        
+            <table class="style1">
+                <tr>
+                    <td class="style3">
+                        <asp:HyperLink ID="HyperLink1" runat="server" 
+                            
+                            style="color: #FFFFFF; font-size: 20pt; font-style: italic; font-family: 'High Tower Text'; background-color: #333300" 
+                            NavigateUrl="~/memberdetailaspx.aspx">Member Details</asp:HyperLink>
+&nbsp;
+                    </td>
+                    <td style="background-color: #333300">
+                        <asp:HyperLink ID="HyperLink2" runat="server" 
+                            
+                            style="font-size: 20pt; font-style: italic; font-family: 'High Tower Text'; color: #FFFFFF; background-color: #333300" 
+                            NavigateUrl="~/adlogout.aspx">Logout</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="style2" colspan="2">
+                        &nbsp;</td>
+                </tr>
+            </table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    
+    </form>
+</body>
+</html>
